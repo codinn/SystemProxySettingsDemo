@@ -7,6 +7,7 @@ macOS proxy settings demo in system network preferences.
 
 # SystemProxySettingsDemo App codes description:
 1. File “ViewController.swift”: Creating an authorization reference, Requesting Authorization, System Network Preferences Proxy settings. 
+    
     Function define：
     // requesting authorization with “AuthorizationCopyRights”
     // set system network preferences proxy with “SCPreferencesCreateWithAuthorization” and “SCPreferencesPathSetValue”
