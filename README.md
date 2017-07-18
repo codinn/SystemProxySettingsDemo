@@ -1,18 +1,19 @@
 # SystemProxySettingsDemo
 macOS proxy settings demo in system network preferences.
 
-# How to set proxy in system network preferences with authorizing once, and need not authentication for ever, even the App relaunched.
+# How to set proxy in system network preferences with authorizing once, and need not authentication for ever, even the App relaunched?
 # SystemProxySettingsDemo App instruction：
 1. In the demo App “SystemProxySettingsDemo”, there are two buttons on main view. one is “Enable System Proxy” for setting the proxy of system network preferences(with host: 127.0.0.1, port: 8888), the other is “Disable System Proxy”. See the following screen snapshot.
 
 # SystemProxySettingsDemo App codes description:
 1. File “ViewController.swift”: Creating an authorization reference, Requesting Authorization, System Network Preferences Proxy settings. 
+    Function define：
+    // requesting authorization with “AuthorizationCopyRights”
+    // set system network preferences proxy with “SCPreferencesCreateWithAuthorization” and “SCPreferencesPathSetValue”
+    func socksProxySet(enabled: Bool)
 
-Function define：
-// requesting authorization with “AuthorizationCopyRights”
-// set system network preferences proxy with “SCPreferencesCreateWithAuthorization” and “SCPreferencesPathSetValue”
-func socksProxySet(enabled: Bool)
 2. File “CommonAuthorization.swift”: Authorization policy database entries setting and getting.
+
 3. File “codinnDemoRightRemove.sh”: clean policy database entries for demo.
 
 
