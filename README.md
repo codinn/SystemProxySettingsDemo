@@ -28,9 +28,9 @@ How can we authorize once and for all?
 3. File “ViewController.swift”: Creating an authorization reference, Requesting Authorization, System Network Preferences Proxy settings. 
     
     Function define：
-    // requesting authorization with “AuthorizationCopyRights”
+    `// requesting authorization with “AuthorizationCopyRights”
     // set system network preferences proxy with “SCPreferencesCreateWithAuthorization” and “SCPreferencesPathSetValue”
-    func socksProxySet(enabled: Bool)
+    func socksProxySet(enabled: Bool)`
 4. File “CommonAuthorization.swift”: set / get authorization policy database entries
 5. File “codinnDemoRightRemove.sh”: clear policy database entries belongs to demo app
 
