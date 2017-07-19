@@ -7,16 +7,17 @@ macOS proxy settings demo in system network preferences.
 
 # SystemProxySettingsDemo App codes description:
 1. SystemProxySettingsDemo souces codes: https://github.com/codinn/SystemProxySettingsDemo
-2. File “ViewController.swift”: Creating an authorization reference, Requesting Authorization, System Network Preferences Proxy settings. 
+2. Apple Sample Code reference: https://developer.apple.com/library/content/samplecode/EvenBetterAuthorizationSample/Introduction/Intro.html
+3. File “ViewController.swift”: Creating an authorization reference, Requesting Authorization, System Network Preferences Proxy settings. 
     
     Function define：
     // requesting authorization with “AuthorizationCopyRights”
     // set system network preferences proxy with “SCPreferencesCreateWithAuthorization” and “SCPreferencesPathSetValue”
     func socksProxySet(enabled: Bool)
 
-3. File “CommonAuthorization.swift”: Authorization policy database entries setting and getting.
+4. File “CommonAuthorization.swift”: Authorization policy database entries setting and getting.
 
-4. File “codinnDemoRightRemove.sh”: clean policy database entries for demo.
+5. File “codinnDemoRightRemove.sh”: clean policy database entries for demo.
 
 
 # Problem Description:
