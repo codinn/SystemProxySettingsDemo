@@ -4,6 +4,7 @@ macOS proxy settings demo in system network preferences.
 # How to set proxy in system network preferences with authorizing once, and need not authentication for ever, even the App relaunched?
 # SystemProxySettingsDemo App instruction：
 1. In the demo App “SystemProxySettingsDemo”, there are two buttons on main view. one is “Enable System Proxy” for setting the proxy of system network preferences(with host: 127.0.0.1, port: 8888), the other is “Disable System Proxy”. See the following screen snapshot.
+    ![](https://raw.githubusercontent.com/codinn/SystemProxySettingsDemo/master/Screen%20Snapshot/mainView.png)
 
 # SystemProxySettingsDemo App codes description:
 1. SystemProxySettingsDemo souces codes: https://github.com/codinn/SystemProxySettingsDemo
