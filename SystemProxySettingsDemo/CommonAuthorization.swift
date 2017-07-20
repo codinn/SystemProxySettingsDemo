@@ -17,7 +17,7 @@ struct AuthorizationRightKey {
 
 class CommonAuthorization: NSObject {
     
-    static let systemProxyAuthRightName = "com.codinn.com.codinn.systemproxysettingsdemo.rights"
+    static let systemProxyAuthRightName = "com.codinn.systemproxysettingsdemo.rights"
     
     // singleton instance
     static let shared = CommonAuthorization()
@@ -78,6 +78,12 @@ class CommonAuthorization: NSObject {
                 
                 // If not found, add or update the authorization entry in the database
                 // MARK: Change "rightDefaultRule as! CFDictionary" to "rightDefaultRule as! CFString" if changing defaultRule to string
+                // rightDefaultRule as! CFDictionary
+                // kAuthorizationRuleAuthenticateAsAdmin as! CFString
+                // kAuthorizationRuleAuthenticateAsSessionUser
+                // kAuthorizationRuleIsAdmin
+                // kAuthorizationRuleClassAllow
+                // kAuthorizationRightRule
                 status = AuthorizationRightSet(authRef, (rightName as NSString).utf8String!, rightDefaultRule as! CFDictionary, rightDescription as CFString, nil, "Common" as CFString)
                 
                 Swift.print("AuthorizationRightSet set Policy Database with: right name[\(rightName)], result[\(status)]")
